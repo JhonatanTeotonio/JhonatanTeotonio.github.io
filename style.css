@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+@font-face{
+    font-family: MinhaLetra;
+    src: url("docs\Minhaletra_especiais-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: #222222;
+}
+
+body{
+    font-size: 100%;
+    background-color: #f5f5f5;
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background: linear-gradient(340deg, #ffffff, #e9e9e9, transparent);
+}
+
+.titulo{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #222222;
+    background-image: linear-gradient(45deg, #3054c7, #37aaff); /* Gradiente do texto */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+    text-fill-color: transparent; /* Para navegadores que não suportam -webkit-text-fill-color */
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+    text-transform: lowercase;
+}
+
+.cabecalho-menu-item{
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #222222;
+    transition: 0.5s;
+}
+
+.cabecalho-menu-item:hover{
+    color: #37aaff;
+}
+
+.conteudo{
+    padding: 24px;
+}
+
+.conteudo-apresentacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.conteudo-apresentacao-texto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #222222;
+}
+
+.conteudo-apresentacao-texto-titulo h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.conteudo-apresentacao-texto-titulo h1{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.conteudo-apresentacao-texto-descrição{
+    margin: 20px 0px 20px 0px;
+}
+
+
+.botao, .botao-item, .botao-form{
+    text-align: center;
+    width: 50%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Sarala", sans-serif;
+    color: #f3f3f3;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-image: linear-gradient(294deg, #3054c7, #37aaff);
+    transition: 0.5s ease;
+}
+
+.botao:hover, .botao-item:hover, .botao-form:hover{
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.botao-item{
+    padding: 10px 75px 10px 75px;
+}
+
+.botao-form{
+    margin: auto;
+    margin-top: 25px;
+}
+
+.conteudo-apresentacao-imagem{
+    height: 500px;
+    width: 40%;
+}
+
+.conteudo-apresentacao-imagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(340deg, #ffffff, #e9e9e9, transparent);
+}
+
+.rodape-redes, .rodape-redes a, .tecnologias, .tecnologias i{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: center;
+    gap: 20px;
+    color: #3054c7;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #3054c7, #37aaff); /* Gradiente do texto */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+    text-fill-color: transparent; /* Para navegadores que não suportam -webkit-text-fill-color */
+}
+
+.rodape-redes, .rodape-redes a{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.tecnologias{
+    padding-top: 25px;
+    font-size: 50px;
+    
+}
+
+.rodape-redes a:hover{
+    color: #37aaff;
+}
+
+.rodape-texto{
+    margin: -7px;
+}
+
+.assinatura{
+    font-family: MinhaLetra;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin: 0px 0px 0px 0px;
+    transition: 0.5s ease;
+}
+
+.assinatura:hover{
+    background-image: linear-gradient(45deg, #3054c7, #37aaff); /* Gradiente do texto */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
+    text-fill-color: transparent; /* Para navegadores que não suportam -webkit-text-fill-color */
+}
+
+.projetos, .form-contato{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.section-header {
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+.section-header p{
+    margin-top: 25px;
+}
+
+.section-header h1{
+    margin: 15px 0px 30px 0px;
+}
+
+.projetos-itens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.item{
+    width: 33%;
+    padding: 30px;
+}
+
+.item p{
+    margin-bottom: 20px;
+}
+
+.imagem-projeto{
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px 0px 15px 0px;
+}
+
+.imagem-projeto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.form-contato form{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-contato form label{
+    font-family: "Righteous", sans-serif;
+    font-size: 20px;
+    color: #222222;
+    padding-top: 20px;
+}
+
+.form-contato form input, .form-contato form textarea{
+    font-family: "Sarala", sans-serif;
+    font-size: 15px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}

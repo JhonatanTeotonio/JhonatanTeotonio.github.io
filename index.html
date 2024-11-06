@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium exercitationem rerum recusandae! Sint consequatur fugiat natus nobis consequuntur odit earum, maxime reiciendis facere quis quaerat ab ex aut eligendi.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <title>Jhonatan Teotonio</title>
+</head>
+<body>
+    <header class="cabecalho" id="inicio">
+        <a href="#inicio"><h1 class="titulo">J. Teotonio</h1></a>
+        <nav class="cabecalho-menu">
+            <a href="#inicio" class="cabecalho-menu-item">Home</a>
+            <a href="#sobre-mim" class="cabecalho-menu-item">Sobre Mim</a>
+            <a href="#portfolio" class="cabecalho-menu-item">Portfólio</a>
+            <a href="#contato" class="cabecalho-menu-item">Contato</a>
+            <a href="docs/curriculo.pdf" download class="cabecalho-menu-item">Download do Currículo</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-apresentacao" id="sobre-mim">
+            <div class="conteudo-apresentacao-texto">
+                <div class="conteudo-apresentacao-texto-titulo">
+                    <h2>Me chamo</h2>
+                    <h1>Jhonatan Teotonio</h1>
+                </div>
+                <p class="conteudo-apresentacao-texto-descrição">Tenho 22 anos, sou Analista de Dados, Desenvolvedor Front-End e Estudante de <strong>Ciência da Computação.</strong></p>
+                <a href="#portfolio" class="botao">Meus Projetos</a>
+            </div>
+            <div class="conteudo-apresentacao-imagem"><img src="imgs/photo.jpg" alt="Foto de perfil"></div>
+            
+        </section>
+        <section class="projetos" id="portfolio">
+            <div class="section-header">
+                <h1 class="titulo">Portfólio</h1>
+                <p>Graduando em Ciência da Computação, possuo experiencia com documentação e análise de dados, e desenvolvimento de softwares. Tenho habilidades em automação de processos de extração e análise, utilizando Python e SQL em notebooks, além de conhecimentos em ferramentas de BI para criação de dashboards, como Qlik Sense e PowerBI. Minhas principais tecnologias:</p>
+                
+                <div class="tecnologias">
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-java-plain"></i>
+                    <i class="devicon-azuresqldatabase-plain"></i>
+                    <i class="devicon-python-plain"></i>
+                </div>
+                
+                <p>Também atuo na criação de páginas web e tenho um interesse especial por desenvolvimento de interfaces web, sempre buscando construir soluções eficazes e funcionais. Confira alguns dos meus projetos recentes:</p>
+            </div>
+            <div class="projetos-itens">
+                <div class="item">
+                    <h1>Solar Power - Landing Page</h1>
+                    <div class="imagem-projeto">
+                        <img src="imgs/project1.png" alt="nome do projeto">
+                    </div>
+                    <p>Projeto de reformulação da landing page lorde.co.nz utilizando apenas HTML, CSS e JavaScript. O projeto apresenta animações e demonstra noção de posicionamento de vetores.</p>
+                    <a href="https://jhonatanteotonio.github.io/Solar-Power/" class="botao-item" target="_blank">Conheça</a>
+                </div>
+                <div class="item">
+                    <h1>To-Do List - ReactJS</h1>
+                    <div class="imagem-projeto">
+                        <img src="imgs/project2.png" alt="nome do projeto">
+                    </div>
+                    <p>Projeto de criação de uma to-do list utilizando apenas HTML, CSS e JavaScript, aplicando o framework ReactJS. O projeto apresenta animações e demonstra noções básicas de como se trabalhar com ReactJS.</p>
+                    <a href="https://github.com/JhonatanTeotonio/To-Do-List" class="botao-item" target="_blank">Conheça</a>
+                </div>
+                <div class="item">
+                    <h1>J. Teotonio - Landing Page</h1>
+                    <div class="imagem-projeto">
+                        <img src="imgs/photo.jpg" alt="nome do projeto">
+                    </div>
+                    <p>Projeto para apresentar minhas habilidades, projetos e experiência de forma atraente e profissional. A página é inteiramente feita com HTML e CSS, onde tecnicas de posicionamentos de display são ultilizadas.</p>
+                    <a href="#inicio" class="botao-item">Conheça</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="form-contato" id="contato">
+            <div class="section-header">
+                <h1 class="titulo">Contato</h1>
+                <p>Abaixo você pode preencher o formulário para entrar em contato comigo.</p>
+            </div>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome.">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail.">
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem."></textarea>
+                <button type="submit" class="botao-form">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="b3ca250c-9a9d-491b-b0c5-a8d110114c96">
+                <input type="hidden" name="redirectTo" value="http:/127.0.0.1:5500/index.html">
+                    
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-redes">
+            <a href="http://www.linkedin.com/in/jhonatanteotonio/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="http://www.github.com/JhonatanTeotonio" target="_blank" class="fa fa-github"></a>
+            <a href="mailto:jhonatantanteotonio@gmail.com" target="_blank" class="fa fa-envelope"></a>
+            <a href="http://www.instagram.com/jho.teotonio/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+        <p class="rodape-texto">Desenvolvido com <strong>HTML e CSS</strong> | &copy 2024</p>
+        <p class="rodape-texto"><a href="#inicio"><strong class="assinatura">jhonatan teotonio.</strong></a></p>
+    </footer>
+</body>
+</html>
+

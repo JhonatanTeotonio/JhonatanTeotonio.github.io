@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: MinhaLetra;
-    src: url("docs\Minhaletra_especiais-Regular.ttf");
+    src: url("docs\Minhaletra_especiais-Regular.ttf") format('ttf');
 }
 
 *{
@@ -110,11 +110,19 @@ body{
 
 .botao:hover, .botao-item:hover, .botao-form:hover{
     box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    scale: 1.04;
+    cursor: pointer;
 }
 
 .botao-item{
     padding: 10px 75px 10px 75px;
+    transition: 0.5s ease;
 }
+
+.botao-item:hover{
+    padding: 15px 75px 15px 75px;
+}
+
 
 .botao-form{
     margin: auto;
@@ -154,6 +162,11 @@ body{
     -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
     -webkit-text-fill-color: transparent; /* Torna o preenchimento do texto transparente */
     text-fill-color: transparent; /* Para navegadores que não suportam -webkit-text-fill-color */
+    transition: ease 0.5s;
+}
+
+.tecnologias i:hover{
+    scale: 1.1;
 }
 
 .rodape-redes, .rodape-redes a{
@@ -169,6 +182,7 @@ body{
 
 .rodape-redes a:hover{
     color: #37aaff;
+    scale: 1.05;
 }
 
 .rodape-texto{
@@ -243,6 +257,11 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.imagem-projeto img:hover{
+    scale: 1.05;
 }
  
 .form-contato form{
